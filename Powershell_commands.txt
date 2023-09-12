@@ -1,0 +1,47 @@
+In powershell,the commands are in canonical form,means first letter will be capital then followed small letters.
+and it command have - or sounds like different word,then also follow canonical form.
+
+1)Select-Object  is used to filter the output the command,it's like grep in linux
+
+Ex: Get-WmiObject Win32_Server | Select-Object Name  --> it will list all available services with Name only.
+
+2)Get-WmiObject --> is cmdlet in powershell to retrieve the management information 
+from the local and remote computers in windows environment.
+
+Usage or syntax:
+Get-WmiObject -Class name_of_WMI_class
+
+Ex: Get-WmiObject -Class Win32_Product
+
+WMI -->stands for windows management instrumentation,is set of specifications from microsoft
+to consolidate the management of devices and applications in a network.
+
+Get-WmiObject is especially used to query the WMI clasess and retrieve the information about device
+intalled  applications
+
+WMI Clasess are -->
+            Win32_Process: Represents a process running on a Windows system. It includes information like process ID, command line, and more.
+                                                                                                                                   
+            Win32_Service: Represents a Windows service. It provides details about services, such as their name, status, and startup type.
+
+            Win32_LogicalDisk: Represents a logical disk drive (e.g., C:, D:). It includes information like disk space, free space, and file system type.
+
+            Win32_NetworkAdapter: Represents a network adapter. It includes details like MAC address, connection status, and more.
+
+            Win32_OperatingSystem: Provides information about the operating system, including version, build number, registered user, and more
+ 
+            Win32_ComputerSystem: Contains information about the computer system itself, such as manufacturer, model, total physical memory, and more.
+
+            Win32_UserAccount: Represents a user account on the system. It includes properties like username, full name, and SID.
+
+            Win32_Group: Represents a group of user accounts. It includes properties like group name, description, and members.
+
+            Win32_Printer: Represents a printer installed on the system. It includes properties like printer name, status, and more.
+
+            Win32_BIOS: Provides information about the computer's BIOS, including manufacturer, version, and release date.
+
+            Win32_PingStatus: Allows you to perform a ping to a specified target and retrieve information about the status of the ping.
+
+we have other clases also
+
+
